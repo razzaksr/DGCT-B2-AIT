@@ -5,6 +5,12 @@ import java.util.List;
 
 public class Oraganizer {
     private List<Event> dgctEvents = new ArrayList<>();
+    private static Oraganizer oraganizer = new Oraganizer();
+    // static getter
+    public static Oraganizer getOraganizer(){
+        return oraganizer;
+    }
+    private Oraganizer(){};
     public void planEvent(Event event){
         dgctEvents.add(event);
         System.out.println(event.getEventName()+" has planned");

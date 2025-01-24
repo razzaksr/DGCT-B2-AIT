@@ -21,7 +21,8 @@ public class App
         // Event event2 = new Event("ItVictor2k24","PPT",LocalDate.now());
         // System.out.println(event2);
         Scanner scanner = new Scanner(System.in);
-        Oraganizer oraganizer = new Oraganizer();
+        // Oraganizer oraganizer = new Oraganizer();
+        Oraganizer oraganizer = Oraganizer.getOraganizer();// singletom
         System.out.println("-------------Welcome to DGCT---------");
         do{
             System.out.println("1. Plan Event\n2.Enroll\n3.Declare\n4.View\nAny to logout");
