@@ -14,8 +14,8 @@ public class CollegeEvents {
     private List<String> eventPArticipants;
     private String eventWinner;
     private String eventRunner;
-    private LocalDateTime eventDate;
-    public CollegeEvents(String eventName, String eventDepartment, LocalDateTime eventDate) {
+    private String eventDate;
+    public CollegeEvents(String eventName, String eventDepartment, String eventDate) {
         this.eventName = eventName;
         this.eventDepartment = eventDepartment;
         this.eventDate = eventDate;
@@ -52,10 +52,10 @@ public class CollegeEvents {
     public void setEventRunner(String eventRunner) {
         this.eventRunner = eventRunner;
     }
-    public LocalDateTime getEventDate() {
+    public String getEventDate() {
         return eventDate;
     }
-    public void setEventDate(LocalDateTime eventDate) {
+    public void setEventDate(String eventDate) {
         this.eventDate = eventDate;
     }
     

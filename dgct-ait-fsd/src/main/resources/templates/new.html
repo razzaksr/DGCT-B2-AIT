@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Event Plan</title>
+</head>
+<body>
+    <form th:action="@{'/mvc/'}" method="post" th:object="${object}">
+        <input type="text" th:field="*{eventName}">
+        <input type="text" th:field="*{eventDepartment}">
+        <input type="date" th:field="*{eventDate}">
+        <input type="submit" value="Schedule">
+    </form>
+</body>
+</html>
