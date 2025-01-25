@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Declare</title>
+</head>
+<body>
+    <div th:each="temp:${object.eventPArticipants}">
+        <p th:text="${temp}"></p>
+    </div>
+    <form th:action="@{'/mvc/declare'}" th:method="post">
+        <input type="hidden" name="eventName" th:value="${object.eventName}"/>
+        <input type="text" name="eventWinner" />
+        <input type="text" name="eventRunner"/>
+        <input type="submit" value="declare" />
+    </form>
+</body>
+</html>

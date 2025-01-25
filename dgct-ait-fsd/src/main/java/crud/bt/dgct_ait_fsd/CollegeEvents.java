@@ -1,6 +1,7 @@
 package crud.bt.dgct_ait_fsd;
 
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.List;
 
 import jakarta.persistence.Entity;
@@ -11,7 +12,7 @@ public class CollegeEvents {
     @Id
     private String eventName;
     private String eventDepartment;
-    private List<String> eventPArticipants;
+    private List<String> eventPArticipants=new ArrayList<>();
     private String eventWinner;
     private String eventRunner;
     private String eventDate;
